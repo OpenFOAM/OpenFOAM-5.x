@@ -90,7 +90,7 @@ void Foam::functionObjects::wallHeatFlux::calcHeatFlux
 
         forAll(wallHeatFluxBf, patchi)
         {
-            wallHeatFluxBf[patchi] += radHeatFluxBf[patchi];
+            wallHeatFluxBf[patchi] -= radHeatFluxBf[patchi];
         }
     }
 }
