@@ -19,6 +19,7 @@ FoamFile
 // faces.
 internalFacesOnly true;
 
+fields true;
 
 // Baffles to create.
 baffles
@@ -49,8 +50,8 @@ baffles
                     {
                         type            porousBafflePressure;
                         patchType       cyclic;
-                        D               1000;
-                        I               500;
+                        D               10;
+                        I               5;
                         length          0.15;
                         jump            uniform 0;
                         value           uniform 0;
