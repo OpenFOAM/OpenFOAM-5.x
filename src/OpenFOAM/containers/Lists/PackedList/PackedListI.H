@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     |
-    \\  /    A nd           | Copyright (C) 2011-2016 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -369,7 +369,7 @@ inline void Foam::PackedList<nBits>::iteratorBase::operator=
     const unsigned int val
 )
 {
-    // Lazy evaluation - increase size on assigment
+    // Lazy evaluation - increase size on assignment
     if (index_ >= list_->size_)
     {
         list_->resize(index_ + 1);
@@ -546,8 +546,6 @@ inline void Foam::PackedList<nBits>::const_iterator::operator=
     {
         this->index_ = this->list_->size_;
     }
-
-    return *this;
 }
 
 
@@ -1003,7 +1001,7 @@ inline bool Foam::PackedList<nBits>::set
     }
     else if (i >= size_)
     {
-        // Lazy evaluation - increase size on assigment
+        // Lazy evaluation - increase size on assignment
         resize(i + 1);
     }
 
