@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     |
-    \\  /    A nd           | Copyright (C) 2011-2017 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -43,7 +43,7 @@ Usage
 
     pressureData
     {
-        fileName        "pressureData"
+        file                "pressureData";
         nHeaderLine         1;          // number of header lines
         refColumn           0;          // reference column index
         componentColumns    (1);        // component column indices

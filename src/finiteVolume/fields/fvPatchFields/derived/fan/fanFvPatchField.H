@@ -2,7 +2,7 @@
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     |
-    \\  /    A nd           | Copyright (C) 2011-2016 OpenFOAM Foundation
+    \\  /    A nd           | Copyright (C) 2011-2018 OpenFOAM Foundation
      \\/     M anipulation  |
 -------------------------------------------------------------------------------
 License
@@ -56,7 +56,7 @@ Usage
             refColumn       0;
             componentColumns 1(1);
             separator       ",";
-            fileName        "$FOAM_CASE/constant/pressureVsU";
+            file           "$FOAM_CASE/constant/pressureVsU";
         }
         value           uniform 0;
     }
