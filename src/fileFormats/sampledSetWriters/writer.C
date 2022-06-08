@@ -64,10 +64,13 @@ Foam::fileName Foam::writer<Type>::getBaseName
 {
     fileName fName(points.name());
 
-    forAll(valueSets, i)
-    {
-        fName += '_' + valueSets[i];
-    }
+    //forAll(valueSets, i)
+    //{
+    //    fName += '_' + valueSets[i];
+    //}
+
+    if(valueSets.size()!=0)
+        fName += '_' + valueSets[0];
 
     return fName;
 }
